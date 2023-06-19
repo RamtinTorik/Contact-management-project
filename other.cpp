@@ -12,11 +12,11 @@ int i = 0, j = 0, k = 0;
 class contact
 {
 	public:
-	char firstname[15]; //= " ";
-	char lastname[15];  //= " ";
-	char number[15];    //= " ";
-	char address[25];   //= " ";
-	char email[30];     //= " ";
+	char firstname[15];
+	char lastname[15];
+	char number[15];
+	char address[25];
+	char email[30];
 };
 contact obj_arr_contact[100];
 
@@ -67,7 +67,6 @@ void read_contacts_book()
 				i++;
 		}
 	read_contacts_book.close();
-	// k =1;
 }
 
 void returnmenu()

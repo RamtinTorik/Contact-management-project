@@ -26,7 +26,6 @@ void savecontacts()
     cin.getline(obj_arr_contact[i].number, 15);
     contacts_book << obj_arr_contact[i].number;
     contacts_book << " ,";
-
     cout << "please enter address: ";
     cin.getline(obj_arr_contact[i].address, 25);
     contacts_book << obj_arr_contact[i].address;
@@ -49,8 +48,7 @@ void displaycontacts()
     ifstream show("contactsbook.txt");
     if(show.peek()==ifstream::traits_type::eof())
     {
-        cout << "There is no contact!\n\n";			
-        // break;
+        cout << "There is no contact!\n\n";
     }
     else
     {
@@ -277,7 +275,6 @@ void deletespecificcontact()
             }
             case '2':
             {
-                // esc3:
                 int contactindex = searchcontact();
                 if(contactindex != -1)
                 {
@@ -305,11 +302,6 @@ void deletespecificcontact()
                         cout << "Please press enter to return menu...";
                     }
                 }
-                // else
-                // {
-                //     cout << "Please enter correct number:)\n";
-                //     // goto esc3;
-                // }
                 break;
             }
             default:
