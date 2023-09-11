@@ -6,5 +6,3 @@ Email: rotmari101@gmail.com
 
 Project link on GitHub:
 https://github.com/RamtinTorik/Contact_management_project.git
-
-alaki
